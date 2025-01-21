@@ -3,16 +3,16 @@
 
 body {
     background-color: #F0F2F5;
+    margin: 0px;
 }
 
 .header {
     background-color: white;
-    position: fixed;
     display: flex;
     align-items: center;
-    top: 0px;
-    left: 0px;
+    justify-content: center;
     width: 100%;
+    top: 0px;
     height: 78px;
 }
 
@@ -21,15 +21,9 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: 96px;
-    gap: 162px;
+    gap: 167px;
 }
 
-/* Медиа-запрос для адаптации расстояния между элементами */
-@media (max-width: 768px) {
-    .head-text {
-        gap: 5%; /* Установите адаптивное расстояние, выраженное в процентах */
-    }
-}
 .name {
     font-family: "Jost", serif;
     color: #42B2FC;
@@ -62,4 +56,27 @@ li {
 .choose:hover {
     color: #42B2FC;
     background-color: white;
+}
+
+.enter {
+    text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.enter:hover {
+    color: rgba(0, 0, 0, 0.408);
+}
+
+.main {
+    display: flex;
+    /* width: 640px; */
+    /* height: 500px; */
+    position: relative;
+    /* left: 288px; */
+    background-color: red;
+    /* font-family: "Inter", serif; */
+    /* max-width: 640px;
+    font-size: 56px;
+    line-height: 58px;
+    font-weight: 500; */
 }
