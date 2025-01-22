@@ -69,14 +69,50 @@ li {
 
 .main {
     display: flex;
-    /* width: 640px; */
-    /* height: 500px; */
+    flex-direction: column;
     position: relative;
-    /* left: 288px; */
-    background-color: red;
-    /* font-family: "Inter", serif; */
-    /* max-width: 640px;
-    font-size: 56px;
-    line-height: 58px;
-    font-weight: 500; */
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(to right, #F0F2F5 20%, rgba(255, 255, 255, 0) 50%),
+        url('photo_1.jpg');
+    background-size: 1000px;
+    background-position: right;
+    background-repeat: no-repeat;
 }
+
+.main-text {
+    padding-top: 70px;
+    padding-right: 500px;
+    font-family: "Inter", serif;
+    margin: 0px;
+    font-size: 64px;
+}
+
+.main-text-blue {
+    color: #42B2FC;
+}
+
+.choose_2 {
+    text-decoration: none;
+    font-family: "Jost", serif;
+    font-size: 20px;
+    padding: 20px 60px;
+    margin-right: 470px;
+    background-color: #42B2FC;
+    border: 2px solid #42B2FC;
+    color: white;  
+    border-radius: 8px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.choose_2:hover {
+    color: #42B2FC;
+    background-color: #F0F2F5;
+}
+
+/* img {
+    width: 800px;
+    margin-left: 800px;
+} */
