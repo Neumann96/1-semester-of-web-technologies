@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="style-form.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="head-text">
+            <h2 class="name">SKY MOOD</h2>
+            <ul>
+                <li>
+                    <a class="enter" href="form.html" target="_blank">Вход</a>
+                </li>
+                <li>
+                    <a class="choose" href="form.html" target="_blank">Выбрать психолога</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="form">
         <form action="">
-            <fieldset class="form_1">
-                <label>Имя <input type="text" placeholder="Ваня" required></label>
-                <label>ДР <input type="date" required></label>
-                <label>Ваш пол <select name="Пол?">
+                <label>Введите своё имя: <br><input type="text" placeholder="Ваня" required></label>
+                <label>ДР<br><input type="date" required></label>
+                <label>Ваш пол<br><select name="Пол?">
                     <option value="option1">Мужской</option>
                     <option value="option2">Женский</option>
                 </select>
                 </label>
-                <label>Почта <input type="email" placeholder="eshkere@skrrr.yo"></label>
-                <label>Телефон <input type="tel" placeholder="+7... ... .. .." required></label>
-                <button>Отправить</button>
-            </fieldset>
+                <label>Почта<br><input type="email" placeholder="eshkere@skrrr.yo"></label>
+                <label>Телефон<br><input type="tel" placeholder="+7... ... .. .." required></label>
+                <button>Отправить<br></button>
         </form>
     </div>
 </body>
