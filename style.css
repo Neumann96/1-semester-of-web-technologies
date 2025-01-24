@@ -28,7 +28,8 @@ body {
     font-family: "Jost", serif;
     color: #42B2FC;
     font-weight: weight;
-    font-size: 36px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .head > ul {
@@ -60,18 +61,22 @@ li {
 
 .enter {
     text-decoration: none;
-    transition: background-color 0.4s, color 0.4s;
+    transition: color 0.4s;
 }
 
 .enter:hover {
     color: rgba(0, 0, 0, 0.408);
 }
 
+.enter:visited {
+    color: black;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 600px;
+    height: 650px;
     align-items: center;
     justify-content: center;
     background: 
@@ -83,15 +88,40 @@ li {
 }
 
 .main-text {
-    padding-top: 70px;
     padding-right: 500px;
+    padding-bottom: 110px;
     font-family: "Inter", serif;
     margin: 0px;
     font-size: 64px;
 }
 
 .main-text-blue {
+    opacity: 0;
+    position: absolute;
+    animation: fadeAnimation 16s infinite;
     color: #42B2FC;
+}
+
+.main-text-blue:nth-child(1) {
+    animation-delay: 0s;
+}
+.main-text-blue:nth-child(2) {
+    animation-delay: 4s;
+}
+.main-text-blue:nth-child(3) {
+    animation-delay: 8s;
+}
+.main-text-blue:nth-child(4) {
+    animation-delay: 12s;
+}
+
+@keyframes fadeAnimation {
+    5%, 25% {
+        opacity: 1; /* Показать элемент */
+    }
+    30%, 100% {
+        opacity: 0; /* Скрыть элемент */
+    }
 }
 
 .choose_2 {
@@ -112,7 +142,65 @@ li {
     background-color: #F0F2F5;
 }
 
-/* img {
-    width: 800px;
-    margin-left: 800px;
-} */
+.achiev {
+    background-color: white;
+}
+
+.achiev-flex {
+    font-family: "Inter", serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px 300px;
+    gap: 20px;
+    text-align: center;
+    color: rgb(149, 149, 149);
+}
+
+.digits {
+    font-style: bold;
+    font-size: 25px;
+    color: black;
+}
+
+#a, #b, #c, #d {
+    flex-grow: 1;
+}
+
+hr {
+    border: 1px solid rgba(149, 149, 149, 0.189);
+    margin: 0px;
+}
+
+.advant > h4 {
+    background-color: white;
+    margin: 0px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: "Inter", serif;
+    font-size: 64px;
+}
+
+.text-blue {
+    color: #42B2FC;
+}
+
+.advant-grid {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 0px 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 274px);
+    grid-template-rows: repeat(2, 256px);
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 80px;
+    grid-column-gap: 100px;
+}
+
+.advant-grid img {
+    width: 200px;
+}

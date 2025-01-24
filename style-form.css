@@ -35,7 +35,7 @@ label {
 }
 
 input, select {
-    margin: 20px 10px;
+    margin: 10px;
     width: 240px;
     padding: 10px;
     border: 1px solid black;
@@ -47,6 +47,11 @@ select {
 }
 
 input:focus, select:focus {
+    border-color: #42B2FC;
+    outline: none;
+}
+
+input:hover, select:hover {
     border-color: #42B2FC;
     outline: none;
 }
@@ -80,6 +85,13 @@ button:active {
     font-size: 14px;
 }
 
+p {
+    text-align: center;
+    font-size: 12px;
+    width: 262px;
+    color: rgb(149, 149, 149);
+}
+
 .header {
     background-color: white;
     display: flex;
@@ -99,9 +111,11 @@ button:active {
 }
 
 .name {
+    font-family: "Jost", serif;
     color: #42B2FC;
     font-weight: weight;
-    font-size: 36px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .head > ul {
