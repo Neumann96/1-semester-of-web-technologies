@@ -80,7 +80,7 @@ li {
     justify-content: center;
     background: 
         linear-gradient(to right, #F0F2F5 20%, rgba(255, 255, 255, 0) 50%),
-        url('/Curs/img/photo_1.jpg');
+        url('/img/photo_1.jpg');
     background-size: 1000px;
     background-position: right;
     background-repeat: no-repeat;
