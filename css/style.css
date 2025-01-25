@@ -27,7 +27,6 @@ body {
 .name {
     font-family: "Jost", serif;
     color: #42B2FC;
-    font-weight: weight;
     font-size: 24px;
     text-decoration: none;
 }
@@ -158,7 +157,6 @@ li {
 }
 
 .digits {
-    font-style: bold;
     font-size: 25px;
     color: black;
 }
