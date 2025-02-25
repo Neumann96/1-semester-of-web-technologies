@@ -272,3 +272,26 @@ hr {
 .basement-main-text {
     color: #345066;
 }
+
+
+@media (max-width: 1920px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .head-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 96px;
+        gap: 120px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
