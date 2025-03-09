@@ -80,7 +80,7 @@ li {
     justify-content: center;
     background: 
         linear-gradient(to right, #F0F2F5 20%, rgba(255, 255, 255, 0) 50%),
-        url('img/photo_1.jpg');
+        url('photo_1.jpg');
     background-size: 1000px;
     background-position: right;
     background-repeat: no-repeat;
@@ -272,7 +272,6 @@ hr {
 .basement-main-text {
     color: #345066;
 }
-<<<<<<< HEAD
 
 
 @media (max-width: 1920px) {
@@ -296,5 +295,3 @@ hr {
       font-size: 14px;
     }
   }
-=======
->>>>>>> 77931af196983bf05a5d7c900275ad74f32f67d4
